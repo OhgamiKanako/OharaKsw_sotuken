@@ -1,0 +1,165 @@
+/* [START maps_places_searchbox] */
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 90%;
+  z-index: 0;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 0;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+/* [END maps_places_searchbox] */
+.ui-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+}
+.ui-button:hover {
+  background: #ebebeb;
+}
+
+/* 検索ボックス */
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.controls{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  background-color: #fff;
+  display: block;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 13px;
+  margin-left: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.3em;
+  width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.controls input[type="text"]{
+  border: none;
+  height: 2.0em;
+}
+.controls input[type="text"]:focus {
+  outline: 0;
+}
+#mise {
+  cursor: pointer;
+  padding-top: 10px;
+}
+#navi-end {
+  cursor: pointer;
+}
+#cate1 {
+  cursor: pointer;
+}
+#cate2 {
+  cursor: pointer;
+}
+#cate3 {
+  cursor: pointer;
+}
+#cate4 {
+  cursor: pointer;
+}
+#cate5 {
+  cursor: pointer;
+}
+#cate6 {
+  cursor: pointer;
+}
+#cm {
+  cursor: pointer;
+}
+
+.rootbutton {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .controls{
+    margin: 60px 0 0 -193px;
+  }
+}
